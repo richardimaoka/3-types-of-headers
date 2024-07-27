@@ -1,10 +1,13 @@
-import { Header } from "./Header";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className={styles.main}>
-      <Header />
-    </main>
+    <div className={styles.component}>
+      <div className={styles.contents}>
+        <div>A Platoform of</div>
+        <div>DEVELOPMENT</div>
+        <div className={styles.underline}></div>
+      </div>
+    </div>
   );
 }

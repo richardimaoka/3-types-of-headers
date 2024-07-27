@@ -1,0 +1,23 @@
+.component {
+  display: grid;
+
+  /* centering */
+  align-items: center;
+  justify-items: center;
+}
+
+.contents {
+  display: grid;
+
+  /* horizontal centering */
+  justify-items: center;
+
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.underline {
+  width: 100%;
+  border-bottom: solid 4px black;
+}

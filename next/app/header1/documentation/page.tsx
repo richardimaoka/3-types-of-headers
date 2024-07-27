@@ -1,10 +1,5 @@
-import { Header } from "../Header";
 import styles from "./page.module.css";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Header />
-    </main>
-  );
+export default function Page() {
+  return <div className={styles.component}>documentation</div>;
 }
