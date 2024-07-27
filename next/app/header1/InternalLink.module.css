@@ -1,9 +1,18 @@
 .component {
   display: grid;
   align-items: center;
-}
 
-.current {
-  background-color: rgb(39, 39, 39);
-  border-bottom: 2px solid white;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "inner";
+
+  > .text {
+    grid-area: inner;
+  }
+
+  > .line {
+    grid-area: inner;
+    align-self: stretch;
+    border-bottom: 4px solid white;
+  }
 }

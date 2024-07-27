@@ -14,11 +14,9 @@ export function InternalLink(props: Props) {
   const current = pathname === props.href;
 
   return (
-    <Link
-      className={styles.component + (current ? styles.current : "")}
-      href={props.href}
-    >
-      {props.text}
+    <Link className={styles.component} href={props.href}>
+      <span className={styles.text}>{props.text}</span>
+      {current && <div className={styles.line} />}
     </Link>
   );
 }
