@@ -15,7 +15,9 @@ export function InternalLink(props: Props) {
 
   return (
     <Link className={styles.component} href={props.href}>
-      <span className={styles.text}>{props.text}</span>
+      <span className={styles.text + (current ? " " + styles.current : "")}>
+        {props.text}
+      </span>
       {current && <div className={styles.line} />}
     </Link>
   );

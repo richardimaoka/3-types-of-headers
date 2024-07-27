@@ -8,11 +8,16 @@
 
   > .text {
     grid-area: inner;
+    color: rgb(158, 158, 158);
+  }
+
+  > .text.current {
+    color: rgb(255, 255, 255);
   }
 
   > .line {
     grid-area: inner;
     align-self: stretch;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid rgb(255, 255, 255);
   }
 }
