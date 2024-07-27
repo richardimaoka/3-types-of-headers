@@ -3,12 +3,13 @@
   grid-template-columns:
     auto /*symbol*/
     auto /*logotype*/
+    1fr /* ---empty div for spacing--- */
     auto /*Documentation*/
     auto /*APIs*/
     auto /*Pricing*/
     auto /*Terms of Service*/
-    auto /*Log in*/
-    1fr; /*space*/
+    auto /*Log in*/;
+
   column-gap: 10px;
   align-items: center;
 
