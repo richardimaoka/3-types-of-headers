@@ -1,17 +1,13 @@
 import styles from "./Header.module.css";
 import { InternalLink } from "./InternalLink";
-import { Symbol } from "./Symbol";
+import { Logo } from "./Logo";
 
 interface Props {}
 
 export function Header(props: Props) {
   return (
     <div className={styles.component}>
-      <div className={styles.logo}>
-        <Symbol />
-        <div className={styles.logotype}>Development</div>
-      </div>
-
+      <Logo />
       <div /* ---empty div for spacing--- */ />
       <InternalLink href="/header1/documentation" text="Documentation" />
       <InternalLink href="/header1/apis" text="APIs" />
