@@ -7,7 +7,7 @@ export function Header(props: Props) {
   return (
     <div className={styles.component}>
       <Symbol />
-      <div>logotype</div>
+      <div className={styles.logotype}>Development</div>
       <div>Documentation</div>
       <div>APIs</div>
       <div>Pricing</div>
