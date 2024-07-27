@@ -12,10 +12,10 @@ export function Header(props: Props) {
       </div>
 
       <div /* ---empty div for spacing--- */ />
-      <div>Documentation</div>
-      <div>APIs</div>
-      <div>Pricing</div>
-      <div>Terms of Service</div>
+      <div className={styles.link}>Documentation</div>
+      <div className={styles.link}>APIs</div>
+      <div className={styles.link}>Pricing</div>
+      <div className={styles.link}>Terms of Service</div>
       <button className={styles.login}>Log in</button>
     </div>
   );

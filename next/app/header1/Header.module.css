@@ -10,10 +10,13 @@
     auto /*Log in*/;
 
   column-gap: 20px;
-  align-items: center;
+  align-items: stretch;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  > .link {
+    display: grid;
+    align-items: center;
+  }
+
   padding-left: 30px;
   padding-right: 30px;
 
@@ -26,6 +29,9 @@
   column-gap: 10px;
   align-items: center;
 
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   /* > selector: direct children */
   > .logotype {
     font-weight: 700;
@@ -34,6 +40,8 @@
 }
 
 .login {
+  align-self: center;
+
   background-color: white;
   color: black;
 
