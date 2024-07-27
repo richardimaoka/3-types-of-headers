@@ -10,4 +10,7 @@
     auto /*Log in*/
     1fr; /*space*/
   column-gap: 10px;
+
+  color: white;
+  background-color: black;
 }
