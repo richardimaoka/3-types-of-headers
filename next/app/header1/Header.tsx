@@ -14,9 +14,9 @@ export function Header(props: Props) {
 
       <div /* ---empty div for spacing--- */ />
       <InternalLink href="/header1/documentation" text="Documentation" />
-      <div className={styles.link}>APIs</div>
-      <div className={styles.link}>Pricing</div>
-      <div className={styles.link}>Terms of Service</div>
+      <InternalLink href="/header1/apis" text="APIs" />
+      <InternalLink href="/header1/pricing" text="Pricing" />
+      <InternalLink href="/header1/terms-of-service" text="Terms of Service" />
       <button className={styles.login}>Log in</button>
     </div>
   );

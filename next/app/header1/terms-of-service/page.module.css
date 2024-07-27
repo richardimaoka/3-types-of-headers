@@ -1,0 +1,17 @@
+.component {
+  width: 60rem;
+
+  /* centering*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
