@@ -1,11 +1,12 @@
 import styles from "./Header.module.css";
+import { Symbol } from "./Symbol";
 
 interface Props {}
 
 export function Header(props: Props) {
   return (
     <div className={styles.component}>
-      <div>symbol</div>
+      <Symbol />
       <div>logotype</div>
       <div>Documentation</div>
       <div>APIs</div>
