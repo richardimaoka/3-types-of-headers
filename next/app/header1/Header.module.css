@@ -10,6 +10,7 @@
     auto /*Log in*/
     1fr; /*space*/
   column-gap: 10px;
+  align-items: center;
 
   padding-top: 10px;
   padding-bottom: 10px;
