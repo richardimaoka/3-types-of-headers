@@ -1,0 +1,9 @@
+.component {
+  display: grid;
+  align-items: center;
+}
+
+.current {
+  background-color: rgb(39, 39, 39);
+  border-bottom: 2px solid white;
+}
