@@ -1,8 +1,7 @@
 .component {
   display: grid;
   grid-template-columns:
-    auto /*symbol*/
-    auto /*logotype*/
+    auto /*logo*/
     1fr /* ---empty div for spacing--- */
     auto /*Documentation*/
     auto /*APIs*/
@@ -10,7 +9,7 @@
     auto /*Terms of Service*/
     auto /*Log in*/;
 
-  column-gap: 10px;
+  column-gap: 20px;
   align-items: center;
 
   padding-top: 10px;
@@ -22,9 +21,16 @@
   background-color: black;
 }
 
-.logotype {
-  font-weight: 700;
-  font-size: 1.5rem;
+.logo {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+
+  /* > selector: direct children */
+  > .logotype {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
 }
 
 .login {

@@ -6,8 +6,11 @@ interface Props {}
 export function Header(props: Props) {
   return (
     <div className={styles.component}>
-      <Symbol />
-      <div className={styles.logotype}>Development</div>
+      <div className={styles.logo}>
+        <Symbol />
+        <div className={styles.logotype}>Development</div>
+      </div>
+
       <div /* ---empty div for spacing--- */ />
       <div>Documentation</div>
       <div>APIs</div>
