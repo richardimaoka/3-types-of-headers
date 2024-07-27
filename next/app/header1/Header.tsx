@@ -13,7 +13,7 @@ export function Header(props: Props) {
       <div>APIs</div>
       <div>Pricing</div>
       <div>Terms of Service</div>
-      <div>Log in</div>
+      <button className={styles.login}>Log in</button>
     </div>
   );
 }
