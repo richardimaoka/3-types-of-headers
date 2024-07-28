@@ -12,6 +12,7 @@ export function Header(props: Props) {
       <div className={styles.link}>Pricing</div>
       <div className={styles.link}>Terms of Service</div>
       <div /* ---empty div for spacing--- */ />
+      <input className={styles.search} placeholder="search in document" />
       <button className={styles.login}>Log in</button>
     </div>
   );
