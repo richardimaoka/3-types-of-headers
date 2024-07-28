@@ -1,3 +1,7 @@
+.component {
+  grid-area: logo;
+}
+
 .logo {
   display: flex;
   column-gap: 10px;

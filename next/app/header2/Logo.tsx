@@ -6,7 +6,7 @@ interface Props {}
 
 export function Logo(props: Props) {
   return (
-    <Link href="/header1">
+    <Link href="/header2">
       <div className={styles.logo}>
         <Symbol />
         <div className={styles.logotype}>Development</div>

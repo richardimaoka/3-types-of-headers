@@ -2,20 +2,19 @@
   display: grid;
   grid-template-columns:
     auto /*logo*/
-    auto /*Documentation*/
-    auto /*APIs*/
-    auto /*Pricing*/
-    auto /*Terms of Service*/
+    1fr /*links*/
     auto /*Log in*/;
+  grid-template-rows:
+    auto /*search*/
+    auto /*logo links login*/;
+  grid-template-areas:
+    ".    search ."
+    "logo links  login";
 
   column-gap: 20px;
   align-items: stretch;
 
-  > .link {
-    display: grid;
-    align-items: center;
-  }
-
+  padding-top: 8px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -23,7 +22,41 @@
   background-color: black;
 }
 
+.searchbox {
+  grid-area: search;
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: auto /*icon*/ 1fr /*input*/;
+  column-gap: 4px;
+  > .input {
+    padding: 0px;
+    border-style: none;
+    outline-style: none;
+    /* trick to prevent icon disappear */
+    min-width: 1rem;
+  }
+
+  background-color: white;
+}
+
+.links {
+  grid-area: links;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.link {
+  display: grid;
+  align-items: center;
+}
+
 .login {
+  grid-area: login;
+
   align-self: center;
 
   background-color: white;
