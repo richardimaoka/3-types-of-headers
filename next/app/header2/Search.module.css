@@ -8,6 +8,15 @@
   transition: width 0.2s;
   width: 13rem;
 
+  /* for the pop-up search list to position accordingly */
+  position: relative;
+}
+
+.component.focus {
+  width: 100%;
+}
+
+.searchbox {
   /**
     * Parent-children settings 
     * to control the inner icon and input 
@@ -35,6 +44,6 @@
   background-color: white;
 }
 
-.component.focus {
-  width: 100%;
+.popup {
+  position: absolute;
 }
