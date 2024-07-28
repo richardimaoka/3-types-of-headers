@@ -6,19 +6,27 @@
 
   /* width is needed for animation between focus <-> non-focus*/
   transition: width 0.2s;
-  width: 20rem;
+  width: 13rem;
 
+  /**
+    * Parent-children settings 
+    * to control the inner icon and input 
+    */
   display: grid;
-  grid-template-columns: auto /*icon*/ auto /*input*/;
+  grid-template-columns: auto /*icon*/ 1fr /*input*/;
   justify-content: start; /*prevent icon grow in width*/
   column-gap: 4px;
-
   > .input {
     padding: 0px;
     border-style: none;
     outline-style: none;
+    /* trick to prevent icon disappear */
+    min-width: 1rem;
   }
+  /* trick to hide input overflow on non-focus mode*/
+  overflow-x: hidden;
 
+  /* padding */
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 8px;
