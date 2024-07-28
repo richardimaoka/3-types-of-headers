@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Search.module.css";
 import { SearchIcon } from "./SearchIcon";
+import { SearchList } from "./SearchList";
 
 interface Props {
   focus?: boolean;
@@ -32,14 +33,12 @@ export function Search(props: Props) {
             setInputNonEmpty(e.currentTarget.value !== "");
           }}
           onBlur={() => {
-            props.onBlur && props.onBlur();
-            clearInput();
+            // props.onBlur && props.onBlur();
+            // clearInput();
           }}
         />
       </div>
-      {props.focus && isInputNonEmpty && (
-        <div className={styles.popup}>aaa</div>
-      )}
+      {props.focus && isInputNonEmpty && <SearchList />}
     </div>
   );
 }

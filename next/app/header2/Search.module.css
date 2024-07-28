@@ -18,9 +18,9 @@
 
 .searchbox {
   /**
-    * Parent-children settings 
-    * to control the inner icon and input 
-    */
+   * Parent-children settings 
+   * to control the inner icon and input 
+   */
   display: grid;
   grid-template-columns: auto /*icon*/ 1fr /*input*/;
   justify-content: start; /*prevent icon grow in width*/
@@ -42,8 +42,4 @@
   padding-right: 8px;
 
   background-color: white;
-}
-
-.popup {
-  position: absolute;
 }
