@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Search.module.css";
 import { SearchIcon } from "./SearchIcon";
 

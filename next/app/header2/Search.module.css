@@ -1,5 +1,6 @@
 .component {
   align-self: center;
+  justify-self: end;
 
   padding-top: 4px;
   padding-bottom: 4px;
@@ -9,9 +10,12 @@
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
+  justify-content: start;
   column-gap: 4px;
 
   background-color: white;
+
+  max-width: 20rem;
 
   > .input {
     padding: 0px;

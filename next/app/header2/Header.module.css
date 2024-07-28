@@ -6,8 +6,7 @@
     auto /*APIs*/
     auto /*Pricing*/
     auto /*Terms of Service*/
-    1fr /* ---empty div for spacing--- */
-    auto /*search input*/
+    1fr /*search input*/
     auto /*Log in*/;
 
   column-gap: 20px;
