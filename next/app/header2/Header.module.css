@@ -1,8 +1,7 @@
 .component {
   display: grid;
   grid-template-columns:
-    auto /*symbol*/
-    auto /*logotype*/
+    auto /*logo*/
     auto /*Documentation*/
     auto /*APIs*/
     auto /*Pricing*/
