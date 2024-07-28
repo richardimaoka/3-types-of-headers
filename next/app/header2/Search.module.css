@@ -1,25 +1,32 @@
 .component {
+  /* override `align-items: stretch` from parent*/
   align-self: center;
+  /* push the search box to the right of the space */
   justify-self: end;
 
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  /* width is needed for animation between focus <-> non-focus*/
+  transition: width 0.2s;
+  width: 20rem;
 
   display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: start;
+  grid-template-columns: auto /*icon*/ auto /*input*/;
+  justify-content: start; /*prevent icon grow in width*/
   column-gap: 4px;
-
-  background-color: white;
-
-  max-width: 20rem;
 
   > .input {
     padding: 0px;
     border-style: none;
     outline-style: none;
   }
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  background-color: white;
+}
+
+.component.focus {
+  width: 100%;
 }
