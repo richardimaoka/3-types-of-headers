@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { Logo } from "./Logo";
+import { SearchIcon } from "./SearchIcon";
 
 interface Props {}
 
@@ -12,7 +13,10 @@ export function Header(props: Props) {
       <div className={styles.link}>Pricing</div>
       <div className={styles.link}>Terms of Service</div>
       <div /* ---empty div for spacing--- */ />
-      <input className={styles.search} placeholder="search in document" />
+      <div className={styles.search}>
+        <SearchIcon />
+        <input className={styles.input} placeholder="search in document" />
+      </div>
       <button className={styles.login}>Log in</button>
     </div>
   );
