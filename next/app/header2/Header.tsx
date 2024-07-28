@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 import { Logo } from "./Logo";
 import { Search } from "./Search";
+import { InternalLink } from "./InternalLink";
 
 interface Props {}
 
@@ -15,10 +16,13 @@ export function Header(props: Props) {
       <Logo />
       {!searchMode && (
         <>
-          <div className={styles.link}>Documentation</div>
-          <div className={styles.link}>APIs</div>
-          <div className={styles.link}>Pricing</div>
-          <div className={styles.link}>Terms of Service</div>
+          <InternalLink href="/header2/documentation" text="Documentation" />
+          <InternalLink href="/header2/apis" text="APIs" />
+          <InternalLink href="/header2/pricing" text="Pricing" />
+          <InternalLink
+            href="/header2/terms-of-service"
+            text="Terms of Service"
+          />
         </>
       )}
       <Search

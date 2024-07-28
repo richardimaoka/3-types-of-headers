@@ -1,0 +1,23 @@
+.component {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "inner";
+
+  > .text {
+    grid-area: inner;
+    color: rgb(158, 158, 158);
+  }
+
+  > .text.current {
+    color: rgb(255, 255, 255);
+  }
+
+  > .line {
+    grid-area: inner;
+    align-self: stretch;
+    border-bottom: 4px solid rgb(255, 255, 255);
+  }
+}
