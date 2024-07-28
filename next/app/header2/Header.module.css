@@ -1,0 +1,22 @@
+.component {
+  display: grid;
+  grid-template-columns:
+    auto /*symbol*/
+    auto /*logotype*/
+    auto /*Documentation*/
+    auto /*APIs*/
+    auto /*Pricing*/
+    auto /*Terms of Service*/
+    auto /*Log in*/;
+
+  column-gap: 20px;
+  align-items: stretch;
+
+  > .link {
+    display: grid;
+    align-items: center;
+  }
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
