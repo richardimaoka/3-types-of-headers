@@ -25,28 +25,6 @@
   background-color: black;
 }
 
-.search {
-  align-self: center;
-
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  column-gap: 4px;
-
-  background-color: white;
-
-  > .input {
-    padding: 0px;
-    border-style: none;
-    outline-style: none;
-  }
-}
-
 .login {
   align-self: center;
 
