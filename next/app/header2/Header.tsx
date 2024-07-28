@@ -12,7 +12,7 @@ export function Header(props: Props) {
       <div className={styles.link}>Pricing</div>
       <div className={styles.link}>Terms of Service</div>
       <div /* ---empty div for spacing--- */ />
-      <div className={styles.link}>Log in</div>
+      <button className={styles.login}>Log in</button>
     </div>
   );
 }
