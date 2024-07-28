@@ -4,5 +4,28 @@
   width: 100%;
   margin-top: 5px;
 
-  background-color: rgb(212, 212, 212);
+  background-color: white;
+  color: black;
+
+  display: grid;
+  row-gap: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px,
+    rgba(0, 0, 0, 0.06) 0px 24px 32px -8px;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 4px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.link:hover {
+  background-color: rgb(221, 221, 221);
 }

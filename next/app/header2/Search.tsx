@@ -33,8 +33,8 @@ export function Search(props: Props) {
             setInputNonEmpty(e.currentTarget.value !== "");
           }}
           onBlur={() => {
-            // props.onBlur && props.onBlur();
-            // clearInput();
+            props.onBlur && props.onBlur();
+            clearInput();
           }}
         />
       </div>
