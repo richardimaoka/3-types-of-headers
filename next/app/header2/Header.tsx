@@ -26,7 +26,7 @@ export function Header(props: Props) {
         onFocus={() => {
           setSearchMode(true);
         }}
-        onBlur={() => {
+        onLoseFocus={() => {
           setSearchMode(false);
         }}
       />
